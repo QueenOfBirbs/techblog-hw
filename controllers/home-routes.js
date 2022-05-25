@@ -72,7 +72,7 @@ router.get('/post/:id', (req, res) => {
     })
         .then(dbPostData => {
             if (!dbPostData) {
-                res.status(404).json({ message: 'No post found with this id' });
+                res.status(404).json({ message: 'There is no post with that id!' });
                 return;
             }
             const post = dbPostData.get({ plain: true });
@@ -113,7 +113,7 @@ router.get('/posts-comments', (req, res) => {
     })
         .then(dbPostData => {
             if (!dbPostData) {
-                res.status(404).json({ message: 'No post found with this id' });
+                res.status(404).json({ message: 'There is no post with that id!' });
                 return;
             }
             const post = dbPostData.get({ plain: true });
