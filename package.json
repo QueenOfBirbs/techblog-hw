@@ -4,27 +4,17 @@
     "description": "tech-blog",
     "main": "server.js",
     "scripts": {
-        "test": "jest",
+        "test": "test",
         "start": "node server.js",
         "watch": "nodemon server.js",
         "seed": "node seeds/index.js"
     },
-    "repository": {
-        "type": "git",
-        "url": "git@github.com:jakekelly44/tech-blog.git"
-    },
-    "author": "Jake Kelly",
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/jakekelly44/tech-blog/issues"
-    },
-    "homepage": "https://github.com/jakekelly44/tech-blog#readme",
     "dependencies": {
         "bcrypt": "^5.0.0",
         "connect-session-sequelize": "^6.1.1",
         "dotenv": "^8.2.0",
         "express": "^4.17.1",
-        "express-handlebars": "^4.0.4",
+        "express-handlebars": "^6.0.6",
         "express-session": "^1.17.1",
         "mysql2": "^2.1.0",
         "sequelize": "^5.21.12"
